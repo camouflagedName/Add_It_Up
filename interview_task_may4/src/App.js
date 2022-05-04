@@ -1,6 +1,7 @@
 import './App.css';
 import MathExpression from './components/MathExpression';
 import UserInput from './components/UserInput';
+import Feedback from './components/Feedback';
 import { useState } from 'react';
 
 function App() {
@@ -24,16 +25,18 @@ function App() {
         if (response.status === 200) return response.json()
       })
       .then(result => {
-        setCorrectAnswer(result)
+        setCorrectAnswer(result.toString())
       })
   }
 
   return (
     <>
       <div className="container-fluid">
-        <MathExpression left={randomNumberLeft} right={randomNumberRight} />
-        <UserInput submitAnswer={submitAnswer} />
-
+        <div className="d-flex justify-content-center">
+          <MathExpression left={randomNumberLeft} right={randomNumberRight} />
+          <UserInput submitAnswer={submitAnswer} />
+          <Feedback userAnswer={userAnswer} correctAnswer={correctAnswer}/>
+        </div>
       </div>
     </>
   );
