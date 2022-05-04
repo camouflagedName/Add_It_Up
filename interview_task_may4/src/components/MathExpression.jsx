@@ -4,7 +4,7 @@ const MathExpression = (props) => {
 
 
     return (
-        <div className='container'>
+        <div className='d-flex row Justify-content-center'>
             {`${props.left} + ${props.right}`}
         </div>
     )
