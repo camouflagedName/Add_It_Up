@@ -10,7 +10,7 @@ Add It Up! was built using React 18.1.0 and Bootstrap 5.1.3.
 
 
 ## Deployment
-Add It Up! can be run directly from any web browser. If running from a local directory:
+If running from a local directory:
 1. Clone the repo
 2. `cd` into the root folder
 3. Install any dependencies using `npm install` in the command line
@@ -18,6 +18,12 @@ Add It Up! can be run directly from any web browser. If running from a local dir
 A broswer window should open and take you directly to http://localhost:3000/. If not, check the port number in your command line and use the port provided.
 
 *Make sure you have `npm` installed before running*
+
+To run from GitHub Pages:
+1. Update "homepage" in `/package.json` file with your repo information
+2. On the cmd line run `npm install --save gh-pages` or `yarn add gh-pages`to install GitHub Pages
+3. Run `npm run deploy` to deploy the site
+*You should be able to visit your site at https://{username}.github.io/{repo_name} by replacing username and repo_name with your GitHub username and repo name*
 
 
 ## Contributions
