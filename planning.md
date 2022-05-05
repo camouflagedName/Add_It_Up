@@ -6,6 +6,7 @@ This can be seen on the App.js page, though, I modified it since then to just pr
 With React's focus on building components, this qickly transformed into the MathExpression, UserInput, and Feedback components.
 
 ![Figma wireframe](/wireframe.PNG)
+*Figma Wireframe*
 
 Early on, I tried to have each component only focus on rendering while letting App.js hold the logic. This avoided having to pass state up and downstream, which tends to feel bug prone. Using a state management library, like Redux, could help with this, but having keeping the logic central allowed felt like it allowed easier management of each render.
 
