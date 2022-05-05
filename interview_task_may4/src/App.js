@@ -46,10 +46,12 @@ function App() {
       fetch(URL)
         .then(response => {
           if (response.status === 200) return response.json()
+          throw new Error("Bad network response. Response status code: ", response.status)
         })
         .then(result => {
           setCorrectAnswer(result.toString())
         })
+        .catch(error => console.log(error.message))
     }
   }
   /* onClick event to render new problem or problem set */
