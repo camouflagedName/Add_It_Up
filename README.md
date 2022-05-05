@@ -39,8 +39,8 @@ UI Features:
 When adding a feature, `cd` into `src/components` folder and add a new js or jsx file. Make sure to import this into the App.js file.
 
 Backend:
-- At this time, Add It Up! does not have storage persistence and cannot hold or maintain user data. To add a server/api to the project, consider using nodeJS(https://nodejs.org/) and Express(https://expressjs.com/). The three of these can be integrated together with little to no conflict, as they are all based on JavaScript.
+- At this time, Add It Up! does not have storage persistence and cannot hold or maintain user data. To add a server/api to the project, consider using NodeJS (https://nodejs.org/) and Express (https://expressjs.com/). The three of these can be integrated together with little to no conflict, as they are all based on JavaScript.
 
 ## Questions or Issues
-Contact me at (michael.a.hazeltine@gmail.com)
-GitHub: camouflagedName(https://github.com/camouflagedname)
+Contact me at michael.a.hazeltine@gmail.com with any questions.
+GitHub: https://github.com/camouflagedname

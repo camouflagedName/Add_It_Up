@@ -6,7 +6,7 @@ This can be seen on the App.js page, though, I modified it since then to just pr
 With React's focus on building components, this qickly transformed into the MathExpression, UserInput, and Feedback components.
 
 ![Figma wireframe](/wireframe.PNG)
-*Figma Wireframe*
+*Figma Wireframe
 
 Early on, I tried to have each component only focus on rendering while letting App.js hold the logic. This avoided having to pass state up and downstream, which tends to feel bug prone. Using a state management library, like Redux, could help with this, but having keeping the logic central allowed felt like it allowed easier management of each render.
 
@@ -50,5 +50,5 @@ For instance, I had initially made the Timer component self-contained and kept a
 - Tracking or maintaining questions would only require the randomly generated items (operations and values) to be pushed into a stateful array. I think what could be more interesting is also tracking which ones were correct and the amount of time it took the answer each question. In that situation, I would just use an object/tuple that contained 3 entries: time, problem, and answeredCorrect).
 
 
-<sub><sup>**Note**
-I tend to break JS's commonplace convention of ending expressions with `;`. This is on purpose and a personal preference, mainly because it is visually similar to Ruby and Python and makes switching among slightly easier while also looking cleaner (only my opinion). It saves nothing in file size, though, and I have found very few people break this convention.</sup></sub>
+**Note:**
+I tend to break JS's commonplace convention of ending expressions with `;`. This is on purpose and a personal preference, mainly because it is visually similar to Ruby and Python and makes switching among slightly easier while also looking cleaner (only my opinion). It saves nothing in file size, though, and I have found very few people break this convention.
