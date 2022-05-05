@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Add It Up!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Add It Up! is a browser-based and mobile responsive web app that renders two random integers 0 < n > 100. Users are provided an interactive screen where they input and submit their answer along with a timer, currently set at 15 seconds. Upon answering within the give time frame, feedback is given to the user informing them whether their answer is correct. Users have the option to continue upon answering correctly and incorrectly. The user's overall score is displayed and updated after each new question is rendered.
 
-In the project directory, you can run:
+## Build
 
-### `npm start`
+Add It Up! was built using React 18.1.0 and Bootstrap 5.1.3.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
+Add It Up! can be run directly from any web browser. If running from a local directory:
+1. `cd` into the root folder
+2. Install dependencies using `npm install` in the command line
+3. Run `npm start`
+A broswer window should open and take you directly to http://localhost:3000/. If not, check the port number in your command line and use the port provided.
 
-### `npm test`
+*Make sure you have `npm` installed.*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Contributions
+If you would like to contribute or modify, use the following instructions to set up a local development environment:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. `cd` into the root folder
+2. Install dependencies using `npm install` in the command line
+3. Use your favorite text editor or IDE to begin (this was built with VS Code).
+4. When testing, use your browser's dev console to inspect output written to the console.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Add It Up! was written using React.JS and Bootstrap. If using an additional library, be sure to check for any conflicts. For instance, if use jQuery, add `<script>jQuery.noConflict()</script>` in the `<head>` element of `index.html`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contributions to consider:
+UI Features:
+- adding user options and improving accessibility, including: dark mode, font sizing, and aria-labels
+- adding multiple problems
+- adding multipe operations
+- increasing problem complexity
 
-### `npm run eject`
+When adding a feature, `cd` into `src/components` folder and add a new js or jsx file. Make sure to import this into the App.js file.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Backend:
+- At this time, Add It Up! does not have storage persistence and cannot hold or maintain user data. To add a server/api to the project, consider using nodeJS(https://nodejs.org/) and Express(https://expressjs.com/). The three of these can be integrated together with little to no conflict, as they are all based on JavaScript.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Questions or Issues
+Contact me at (michael.a.hazeltine@gmail.com)
+GitHub: camouflagedName(https://github.com/camouflagedname)

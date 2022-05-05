@@ -20,6 +20,7 @@ const UserInput = (props) => {
     return (
         <div className='d-flex row justify-content-center mb-5'>
             <form onSubmit={handleSubmit} className='justify-content-end col-8'>
+                {props.error}
                 <input type='text' className="form-control" style={{ height: "150px", fontSize: "50px", textAlign: "center" }} onChange={handleInputChange} />
                 <div className="d-flex justify-content-end">
                     <button type="submit" className="btn btn-primary mt-3">Submit Answer!</button>
